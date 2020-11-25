@@ -9,6 +9,24 @@
             body {
                 display: grid;
                 grid-template-columns: minmax(0, 1fr) min(65ch, 90%) minmax(0, 1fr);
+
+                padding: 0;
+                margin: 0;
+
+                text-align: justify;
+                font-size: 13pt;
+                font-family: arial, sans-serif;
+            }
+
+            @media (max-width: 512px) {
+                body {
+                    font-size: 11pt;
+                }
+            }
+
+            p {
+                margin-top: 0;
+                margin-bottom: 1em;
             }
 
             .main-wrapper > * {
@@ -20,73 +38,8 @@
                 grid-column: 1 / 4;
             }
 
-            body {
-                padding: 0;
-                margin: 0;
-
-                text-align: justify;
-                font-size: 13pt;
-                font-family: "Raleway", arial, sans-serif;
-            }
-
-            @media (max-width: 512px) {
-                body {
-                    font-size: 11pt;
-                }
-            }
-
-            @font-face {
-                font-family: "Raleway";
-                src: url("fonts/raleway/Raleway-Regular.ttf");
-            }
-            @font-face {
-                font-family: "RalewayBold";
-                src: url("fonts/raleway/Raleway-Bold.ttf");
-            }
-            @font-face {
-                font-family: "RalewayItalic";
-                src: url("fonts/raleway/Raleway-Italic.ttf");
-            }
-            @font-face {
-                font-family: "RalewayBoldItalic";
-                src: url("fonts/raleway/Raleway-BoldItalic.ttf");
-            }
-
-            h2 {
-                font-family: 'RalewayBoldItalic', arial, sans-serif;
-                font-weight: normal;
-                font-style: normal;
-            }
-
-            b {
-                font-family: 'RalewayBold', arial, sans-serif;
-                font-weight: normal;
-                font-style: normal;
-            }
-
-            i {
-                font-family: 'RalewayItalic', arial, sans-serif;
-                font-weight: normal;
-                font-style: normal;
-            }
-
-            b i, i b {
-                font-family: 'RalewayBoldItalic', arial, sans-serif;
-                font-weight: normal;
-                font-style: normal;
-            }
-
-            h1 {
+            .center {
                 text-align: center;
-            }
-
-            p {
-                margin-top: 0;
-                margin-bottom: 1em;
-            }
-
-            a {
-                text-decoration: none;
             }
         </style>
     </head>
@@ -96,7 +49,7 @@
         </div>
         <main class="main-wrapper">
         <section>
-            <h1>
+            <h1 class="center">
                 Getting Started
             </h1>
         </section>
